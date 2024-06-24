@@ -1,0 +1,14 @@
+name: workflow2
+on: 
+  pull_request:
+    branches:
+    - main
+  schedule:
+    - cron: "55 08,20 * * *"
+  workflow_dispatch:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "hello from ankush 2nd workflow"
