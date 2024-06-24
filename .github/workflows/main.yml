@@ -1,5 +1,5 @@
 name: workflow1
-on: push
+on: [push, fork]
 jobs:
   job1:
     runs-on: ubuntu-latest
